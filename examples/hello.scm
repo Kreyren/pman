@@ -8,6 +8,7 @@ exec guile -s "$0" "$@"
 (initialize)
 
 (: "hello" '()
-  (~ (display "Hello from potato-make!\n")))
+  (lambda ()
+    (display "Hello from potato-make!\n")))
 
 (execute)
