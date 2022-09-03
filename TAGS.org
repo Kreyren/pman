@@ -1,0 +1,32 @@
+#+TITLE: TAGS
+
+This project is tagging code using the following syntax:
+
+#+BEGIN_SRC scheme-mode
+;; MAIN_TAG-SUB_TAG(Tag Author Signature): Comment
+#+END_SRC
+
+Which in practice might be used as:
+
+#+BEGIN_SRC scheme-mode
+;; FIXME-QA(Krey): This code needs to be improved for whatever reason
+(some (scheme (code)))
+#+END_SRC
+
+** List of Tags
+
+- FIXME = Used to tag code that needs attention
+  - FIXME-QA = Used to tag code with Quality Assurance issues
+  - FIXME-DOCS = Tags code that needs documentation
+  - FIXME-TRANSLATE = Needs definition for handling translations
+- DNR = Do Not Release - Usage prevents new version release, used to tag code that needs to be addressed prior
+- DNM = Do Not Merge - Usage in merge/pull requests blocks syncing the code, used to tag code that needs to be addressed before merge can happen
+- PROD/PRODUCTION = Code that should be considered prior to it's usage in production environment
+- TRANSLATE = Needs to be translated
+- WTF = Code that is not fully understood what it is doing
+
+** Repository-wide tags
+
+Tags that apply repository-wide
+
+- FIXME(Krey): The repository is using things like =(format ... (green)..)= to make the text green, these should be renamed on e.g. =(font-green)=

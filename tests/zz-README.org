@@ -1,0 +1,4 @@
+Directory storing tests
+
+
+NOTE-QA(Krey): Tests were ignored in the QA, decided that they should be rewritten once we finish refactor of the project
